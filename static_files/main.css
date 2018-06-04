@@ -110,7 +110,7 @@ textarea {
      src: url("../fonts/FF_DIN_Bold.otf") format("opentype");
    }
 
-input[type=text] {
+input[type=email] {
 
   background-color: #E8E8E8;
   width: 265px;
@@ -134,12 +134,6 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     font-family: DIN-Regular;
     font-size: 20px;
-}
-
-.ib{
-  width: 900px;
-  display: flex;
-  justify-content: space-around;
 }
 
 .modal{

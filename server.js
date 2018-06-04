@@ -90,26 +90,27 @@ app.listen(3000, () => {
   console.log('Server started at http://localhost:3000/');
 });
 
-app.post('/signup', function (req, res) {
-  // save user details to your database.
-  res.send('Signed Up!');
-});
-
 // app.post('/signup', function (req, res) {
-//     console.log(req);
-//     request
-//         .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
-//         .set('Content-Type', 'application/json;charset=utf-8')
-//         .set('Authorization', 'Basic ' + new Buffer('any:' + mailchimpApiKey ).toString('base64'))
-//         .send({
-//           'email_address': req.body.email,
-//           'status': 'subscribed',
-//         })
-//             .end(function(err, response) {
-//               if (response.status < 300 || (response.status === 400 && response.body.title === "Member Exists")) {
-//                 res.send('Signed Up!');
-//               } else {
-//                 res.send('Sign Up Failed :(');
-//               }
-//           });
+//   // save user details to your database.
+//   res.send('Signed Up!');
 // });
+
+app.post('/signup', function (req, res) {
+    console.log(req);
+    request
+        .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
+        .set('Content-Type', 'application/json;charset=utf-8')
+        .set('Authorization', 'Basic ' + new Buffer('any:' + mailchimpApiKey ).toString('base64'))
+        .send({
+          'email_address': req.body.email,
+          'status': 'subscribed',
+        })
+            .end(function(err, response) {
+              console.log(response);
+              if (response.status < 300 || (response.status === 400 && response.body.title === "Member Exists")) {
+                res.send('Signed Up!');
+              } else {
+                res.send('Sign Up Failed :(');
+              }
+          });
+});
