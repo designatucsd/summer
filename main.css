@@ -142,6 +142,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: FF_DIN_Regular;
     font-size: 1.25rem;
     -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .modal{
@@ -247,6 +248,7 @@ width: 417px;
       font-size: 14px;
       text-align: center;
       -webkit-appearance: none;
+      border-radius: 0;
   }
 
   .design_summer{
