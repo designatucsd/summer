@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -123,7 +123,7 @@ input[type=email] {
   box-sizing: border-box;
   border: none;
   /* margin: 0 5px; */
-  font-family: DIN-Regular;
+  font-family: FF_DIN_Regular;
   font-size: 1.25rem;
   padding-left: 10px;
 }
@@ -139,7 +139,7 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     margin: 0 5px;
     cursor: pointer;
-    font-family: DIN-Regular;
+    font-family: FF_DIN_Regular;
     font-size: 1.25rem;
 }
 
@@ -167,7 +167,8 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 .design_summer{
-font-family: JosefinSans-Bold;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 600;
 font-size: 3rem;
 color: #00BFA5;
 letter-spacing: 0;
@@ -175,7 +176,7 @@ letter-spacing: 0;
 
 .subText{
   /* Weekly emails to hel: */
-font-family: DIN-Regular;
+font-family: FF_DIN_Regular;
 font-size: 1.25rem;
 color: #424242;
 letter-spacing: 0;
@@ -225,7 +226,7 @@ width: 417px;
     justify-content: flex-end;
     margin-right: 35px;
     font-size: 1.25rem;
-    font-family: DIN-Regular;
+    font-family: FF_DIN_Regular;
 }
 
 @media only screen and (max-width: 800px){
@@ -241,13 +242,14 @@ width: 417px;
       text-decoration: none;
       margin: 0 5px;
       cursor: pointer;
-      font-family: DIN-Regular;
+      font-family: FF_DIN_Regular;
       font-size: 14px;
       text-align: center;
   }
 
   .design_summer{
-  font-family: JosefinSans-Bold;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
   font-size: 36px;
   color: #00BFA5;
   letter-spacing: 0;
@@ -255,7 +257,7 @@ width: 417px;
 
   .subText{
     /* Weekly emails to hel: */
-  font-family: DIN-Regular;
+  font-family: FF_DIN_Regular;
   font-size: 14px;
   color: #424242;
   letter-spacing: 0;
@@ -272,7 +274,7 @@ width: 417px;
     box-sizing: border-box;
     border: none;
     /* margin: 0 5px; */
-    font-family: DIN-Regular;
+    font-family: FF_DIN_Regular;
     font-size: 14px;
     padding-left: 10px;
   }
@@ -294,7 +296,7 @@ width: 417px;
 
   .subText{
     /* Weekly emails to hel: */
-  font-family: DIN-Regular;
+  font-family: FF_DIN_Regular;
   font-size: 1.25rem;
   color: #424242;
   letter-spacing: 0;
