@@ -10,6 +10,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@font-face {
+  font-family: "FF_DIN_Regular";
+  src: url("fonts/FF_DIN_Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "FF_DIN_Bold";
+  src: url("fonts/FF_DIN_Bold.otf") format("opentype");
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -96,19 +109,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-// Font Awesome
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-// @import url('/public/fonts/OratorStdMedium.ttf');
-
-@font-face {
- font-family: "FF_DIN_Regular";
- src: url("fonts/FF_DIN_Regular.otf") format("opentype");
-}
-@font-face {
- font-family: "FF_DIN_Bold";
- src: url("fonts/FF_DIN_Bold.otf") format("opentype");
-}
 
 .mobileIllustration{
   display: none;
