@@ -86,8 +86,8 @@ h1 {
       font-size: 3rem; } }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.75rem; }
+  font-size: 1rem;
+  line-height: 1.6rem; }
   @media (min-width: 600px) {
     p {
       font-size: 1.2rem;
@@ -129,12 +129,12 @@ p {
         width: 100%; } }
 
 .blurb {
-  margin: 3.5rem 0;
+  margin: 3rem 0;
   width: 100%;
   max-width: 50rem; }
   @media (min-width: 600px) {
     .blurb {
-      margin: 4.5rem 0;
+      margin: 4rem 0;
       display: grid;
       grid-template-columns: 1fr 1fr; } }
 
