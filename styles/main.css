@@ -176,6 +176,12 @@ p {
     .fields {
       margin-top: 1.8rem; } }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline-color: #7E57C2; }
+
 input {
   font-family: "Din", sans-serif;
   font-weight: 500;
@@ -219,8 +225,8 @@ input {
   height: 2.4rem;
   -webkit-appearance: none;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s; }
   @media (hover: hover) {
     .btn:hover {
       background-color: #0080BA; } }
@@ -269,6 +275,5 @@ input {
   margin-top: .9rem; }
   @media (min-width: 840px) {
     .copyright {
-      font-weight: 500;
       font-size: 1.2rem;
       margin-top: 0; } }

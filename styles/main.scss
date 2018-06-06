@@ -112,6 +112,13 @@ p {
   }
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: $purple;
+}
+
 input {
   font-family: $din;
   font-weight: 500;
@@ -148,7 +155,7 @@ input {
   height: $input-height;
   -webkit-appearance: none;
   cursor: pointer;
-  transition: .3s;
+  transition: background-color .3s;
   @media (hover: hover) {
     &:hover {
       background-color: $dark-blue;
@@ -192,7 +199,6 @@ input {
   font-size: .9rem;
   margin-top: .9rem;
   @include md-up {
-    font-weight: 500;
     font-size: 1.2rem;
     margin-top: 0;
   }
