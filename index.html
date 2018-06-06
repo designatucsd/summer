@@ -1,55 +1,68 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#00bfa5">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <!-- Josefin Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
-<body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <title>Design Your Summer</title>
+  </head>
+  <body>
 
-  <!-- Add your site or application content here -->
-  <div class="modal">
-      <img class="mainIllustration" src="img/desktop-illustration.svg">
-      <img class="mobileIllustration" src="img/mobile-illustration.svg">
-      <div class="rightSide">
-        <div class="design_summer"> Design Your Summer</div>
-        <div class="subText"> Weekly emails to help design students both
-            with or without internships thrive this summer. </div>
-        <form class ="fields" action="https://designatucsd.us12.list-manage.com/subscribe/post?u=1caddb4f3fced9b54c0fe1984&amp;id=536b4c9fa4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address">
-          <input type="submit" id="submit" class="btn" value="Get Started">
-        </form>
+    <div id="content">
+      <div class="container">
+        <div class="blurb">
+          <div class="img-desktop">
+            <img src="images/tools-desktop.svg">
+          </div>
+          <div class="text">
+            <h1>Design Your Summer</h1>
+            <p>Weekly emails to help design students both
+              with or without internships thrive this summer.</p>
+            <form class="fields"  action="https://designatucsd.us12.list-manage.com/subscribe/post?u=1caddb4f3fced9b54c0fe1984&amp;id=536b4c9fa4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <input type="email" value="" name="EMAIL" class="required email" placeholder="Email Address" id="mce-EMAIL">
+              <input class="btn" type="submit" id="submit" value="Get Started">
+            </form>
+          </div>
+          <div class="img-mobile">
+            <img src="images/tools-mobile.svg">
+          </div>
+        </div>
       </div>
-  </div>
-  <div class="footer">
-      <a href="https://www.designatucsd.org">
-      <img class="footer_image" src="img/LogoFinal_white.png"> </a>
-      <div class="footer_right"> © Design at UCSD. All Rights Reserved</div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script type="text/html" src="js/plugins.js"></script>
-  <script type="text/html" src="js/main.js"></script>
+    </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+    <div id="footer">
+      <div class="container">
+        <div class="logo">
+          <a href="https://www.designatucsd.org">
+            <img src="images/logo-white.svg" alt="Design at UCSD">
+          </a>
+        </div>
+        <div class="copyright">
+          © Design at UCSD. All Rights Reserved
+        </div>
+      </div>
+    </div>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>

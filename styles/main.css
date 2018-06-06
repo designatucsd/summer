@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-medium-webfont.eot") format("eot");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Din';
+  src: url("../fonts/din-regular-webfont.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Din", sans-serif;
+  font-size: 62.5%;
+  color: #414141; }
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #00BFA5;
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 3rem; } }
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.75rem; }
+  @media (min-width: 600px) {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.9rem; } }
+
+#content .container {
+  min-height: calc(100vh - 5.7rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container {
+  padding: 0 2rem; }
+  @media (min-width: 600px) {
+    .container {
+      padding: 0 4rem; } }
+
+.img-mobile {
+  padding-top: 2.3rem; }
+  .img-mobile img {
+    width: 100%; }
+  @media (min-width: 600px) {
+    .img-mobile {
+      display: none; } }
+
+.img-desktop {
+  display: none; }
+  @media (min-width: 600px) {
+    .img-desktop {
+      display: inline;
+      padding-right: 2.3rem; }
+      .img-desktop img {
+        width: 100%; } }
+
+.blurb {
+  margin: 3.5rem 0;
+  width: 100%;
+  max-width: 50rem; }
+  @media (min-width: 600px) {
+    .blurb {
+      margin: 4.5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+
+/* Form styles */
+.fields {
+  margin-top: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+  @media (min-width: 600px) {
+    .fields {
+      margin-top: 1.8rem; } }
+
+input {
+  font-family: "Din", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+  border: 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-radius: 0; }
+  @media (min-width: 840px) {
+    input {
+      font-size: 1.3rem;
+      padding: 0 1.4rem; } }
+
+.email, ::-webkit-input-placeholder {
+  color: #929292; }
+
+.email, :-ms-input-placeholder {
+  color: #929292; }
+
+.email, ::-ms-input-placeholder {
+  color: #929292; }
+
+.email, ::placeholder {
+  color: #929292; }
+
+.email {
+  background-color: #EDEDED;
+  width: 100%;
+  height: calc(2.4rem + 0.2rem); }
+  @media (min-width: 840px) {
+    .email {
+      height: calc(2.9rem + 0.2rem); } }
+
+.btn {
+  width: 11rem;
+  margin-left: .65rem;
+  color: #fff;
+  background-color: #03A9F4;
+  -webkit-box-shadow: 0 0.2rem 0 #0080BA;
+          box-shadow: 0 0.2rem 0 #0080BA;
+  height: 2.4rem;
+  -webkit-appearance: none;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  @media (hover: hover) {
+    .btn:hover {
+      background-color: #0080BA; } }
+  @media (min-width: 840px) {
+    .btn {
+      margin-left: .9rem;
+      height: 2.9rem; } }
+
+/* Footer styles */
+#footer {
+  background-color: #7E57C2;
+  height: 5.7rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #footer .container {
+    width: 100%;
+    color: #fff; }
+    @media (min-width: 840px) {
+      #footer .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+
+.logo img {
+  height: 1.7rem; }
+  @media (min-width: 840px) {
+    .logo img {
+      height: 2.3rem; } }
+
+.copyright {
+  font-size: .9rem;
+  margin-top: .9rem; }
+  @media (min-width: 840px) {
+    .copyright {
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0; } }
