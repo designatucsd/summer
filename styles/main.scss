@@ -68,11 +68,11 @@ p {
 }
 
 .blurb {
-  margin: 3rem 0;
+  margin: 3rem 0 2.5rem;
   width: 100%;
   max-width: 50rem;
   @include sm-up {
-    margin: 4rem 0;
+    margin: 4rem 0 3.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
