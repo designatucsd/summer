@@ -16,17 +16,28 @@ h1 {
   color: $green;
   font-size: 2.3rem;
   margin-bottom: 0.8rem;
+  line-height: 2.8rem;
   @include sm-up {
     font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.header-break {
+  @include sm-up {
+    display: none;
   }
 }
 
 p {
   font-size: 1rem;
   line-height: 1.6rem;
+  padding-right: 16vw;
   @include sm-up {
+    width: auto;
     font-size: 1.2rem;
     line-height: 1.9rem;
+    padding-right: 0;
   }
 }
 
@@ -48,7 +59,7 @@ p {
 
 .img-mobile {
   img {
-    width: 100%;
+    width: 78%;
   }
   padding-top: 2.3rem;
   @include sm-up {
@@ -62,19 +73,32 @@ p {
     display: inline;
     padding-right: 2.3rem;
     img {
-      width: 100%;
+      width: 30vw;
+      max-width: 23rem;
     }
+  }
+}
+
+.purple-line {
+  height: .35rem;
+  width: 3rem;
+  background-color: $purple;
+  margin-bottom: 1rem;
+  @include sm-up {
+    margin-bottom: 1.5rem;
   }
 }
 
 .blurb {
   margin: 3rem 0 2.5rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 55rem;
   @include sm-up {
     margin: 4rem 0 3.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
   }
 }
 

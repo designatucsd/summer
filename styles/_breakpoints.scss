@@ -1,17 +1,9 @@
-@mixin xs-up {
-  @media (min-width: $xs-screen) {
-    @content;
-  }
-}
-
-// Small devices (landscape phones, 600px and up)
 @mixin sm-up {
   @media (min-width: $sm-screen) {
     @content;
   }
 }
 
-// Medium devices (tablets, 840px and up)
 @mixin md-up {
   @media (min-width: $md-screen) {
     @content;
