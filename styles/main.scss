@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: $green;
   font-size: 2.3rem;
   margin-bottom: 0.8rem;
@@ -68,11 +68,11 @@ p {
 }
 
 .blurb {
-  margin: 3.5rem 0;
+  margin: 3rem 0;
   width: 100%;
   max-width: 50rem;
   @include sm-up {
-    margin: 4.5rem 0;
+    margin: 4rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
