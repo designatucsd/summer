@@ -29,6 +29,9 @@ html {
     line-height: 1.4;
 }
 
+body{
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -151,7 +154,9 @@ input[type=button], input[type=submit], input[type=reset],button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  padding: 194px 0;
+  padding: 10px 0;
+  padding-top: 184px;
+  min-height:calc(100vh - 99px)
 }
 
 .rightSide{
@@ -189,9 +194,6 @@ width: 417px;
 }
 
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
    width: 100%;
    height: 99px;
    background-color: #7E57C2;
@@ -257,27 +259,6 @@ border-radius: 0;}
     height: 30px; } }
 
 @media only screen and (max-width: 800px){
-
-  /* input[type=button], input[type=submit], input[type=reset],button {
-      background-color: #03A9F4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      color: white;
-      width: 99px;
-      height: 30px;
-      padding: 12px 20px 12px 16px;
-      -webkit-box-shadow: 0px 3px #0080BA;
-      text-decoration: none;
-      margin: 0 5px;
-      cursor: pointer;
-      font-family: FF_DIN_Regular;
-      font-size: 14px;
-      text-align: center;
-      -webkit-appearance: none;
-      border-radius: 0;
-  } */
 
   .design_summer{
   font-family: 'Josefin Sans', sans-serif;
@@ -351,9 +332,6 @@ border-radius: 0;}
   }
 
    .footer{
-     position: absolute;
-     left: 0;
-     bottom: 0;
      width: 100%;
      height: 90px;
      background-color: #7E57C2;
